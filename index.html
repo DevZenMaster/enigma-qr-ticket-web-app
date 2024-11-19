@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./script.js" defer></script>
+  <title>Enigma 2K24 Fest </title>
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+</head>
+<body>
+  <header>
+    
+  </header>
+  <h2>Enigma 2K24 Fest QR Ticket Generator</h2>
+  <main>
+    <div class="image">
+      <img src="./images/baner.jpeg" alt="image" />
+    </div>
+    <div class="content">
+      <h2 style="text-align: center;">Enigma 2K24 Event Details</h2>
+      <div>
+        <p><strong>Date:</strong> October 12, 2024</p>
+        <p><strong>Time:</strong> 09:00 AM</p>
+        <p><strong>Venue:</strong> SLTC "wala" Premises</p>
+        <p><strong>Address:</strong> SLTC Resaerch University, Padukka, Sri Lanka</p>
+      </div>
+      <p>
+        Enter your details below to generate a QR Code and download your ticket.
+      </p>
+      <form id="generate-form">
+        <input id="first-name" type="text" placeholder="First Name" class="inputfield" />
+        <input id="last-name" type="text" placeholder="Last Name" class="inputfield" />
+        <input id="center" type="text" placeholder="Center" class="inputfield" />
+        <input id="student-id" type="text" placeholder="Student ID" class="inputfield" />
+
+        <fieldset class="radio-group">
+          <legend>Select Team </legend>
+          <label>
+            <input type="radio" name="team" value="Alpha" />
+            Team Alpha
+          </label>
+          <label>
+            <input type="radio" name="team" value="Bravo" />
+            Team Bravo
+          </label>
+          <label>
+            <input type="radio" name="team" value="Gamma" />
+            Team Gamma
+          </label>
+          <label>
+            <input type="radio" name="team" value="Delta" />
+            Team Delta
+          </label>
+        </fieldset>
+
+        <fieldset class="radio-group">
+          <legend>Select Center Type</legend>
+          <label>
+            <input type="radio" name="center-type" value="SLTC" />
+            SLTC
+          </label>
+          <label>
+            <input type="radio" name="center-type" value="NYSC" />
+            NYSC
+          </label>
+          <label>
+            <input type="radio" name="center-type" value="NYC" />
+            NYC
+          </label>
+          <label>
+            <input type="radio" name="center-type" value="ICST" />
+            ICST
+          </label>
+        </fieldset>
+        <select class="selected" name="size" id="size">
+          <option value="100">100x100</option>
+          <option value="200">200x200</option>
+          <option value="300" selected>300x300</option>
+          <option value="400">400x400</option>
+          <option value="500">500x500</option>
+          <option value="600">600x600</option>
+          <option value="700">700x700</option>
+        </select>
+        <button class="submit" type="submit">Generate Your Ticket</button>
+        <button class="reset" type="button" id="reset-btn">Reset</button>
+      </form>
+    </div>
+  </main>
+  <div id="generated">
+    <div id="spinner" class="loader"></div>
+    <div id="qrcode"></div>
+  </div>
+</body>
+</html>

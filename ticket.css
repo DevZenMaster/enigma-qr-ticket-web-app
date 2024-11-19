@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400&family=Be+Vietnam+Pro:wght@400;500;700&family=Jost:wght@200;300;500&family=Montserrat:wght@300;400;500&family=Poppins:wght@200;300;400;500&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* General Styles */
+body {
+    background-color: rgb(103, 113, 113);
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+  
+.ticket-container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    text-align: center;
+}
+  
+.ticket-header h1 {
+    margin: 0;
+    font-size: 36px; /* Increased font size */
+    color: #ff6a00; /* Changed font color */
+    font-family: "Barlow Semi Condensed", sans-serif;
+    margin-bottom: 20px; /* Added space below header */
+}
+
+.ticket-details {
+    margin-bottom: 20px;
+}
+
+.ticket-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.ticket-details td {
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #333;
+    font-family: "Quicksand", sans-serif;
+}
+
+.ticket-details td:first-child {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 20px; /* Space between label and value */
+}
+
+.ticket-details td:last-child {
+    text-align: left;
+}
+
+/* Remove row borders */
+.ticket-details tr {
+    border-bottom: none; /* Remove border for each row */
+}
+
+/* Optional: Add a subtle bottom border to the table for a cleaner look */
+.ticket-details table {
+    border: 1px solid #ddd;
+    border-radius: 4px; /* Rounded corners for the table */
+}
+
+#qrcode {
+    margin: 25px auto;
+    display: inline-block;
+}
+
+/* Footer Styles */
+.ticket-footer {
+    margin-top: 20px;
+}
+
+.ticket-footer button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff6a00;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 5px; /* Space between buttons */
+}
+  
+.ticket-footer button:hover {
+    background-color: #994000;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 600px) {
+    .ticket-container {
+        padding: 15px;
+    }
+    .ticket-footer button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

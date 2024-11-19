@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ticket.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="./ticket.js" defer></script>
+  <title>Generated Ticket</title>
+</head>
+<body>
+  <div class="ticket-container">
+    <div class="ticket-header">
+      <h1>Enigma 2K24 Fest</h1>
+    </div>
+    <div class="ticket-details">
+      <p><strong>First Name:</strong> <span id="first-name"></span></p>
+      <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+      <p><strong>Center:</strong> <span id="center"></span></p>
+      <p><strong>Student ID:</strong> <span id="student-id"></span></p>
+      <p><strong>Organization:</strong> <span id="center-typea"></span></p>
+      <div id="qrcode"></div>
+    </div>
+    <div class="ticket-footer">
+      <button id="download-btn">Download Your Ticket</button>
+      <button id="back-btn">Back</button>
+    </div>
+  </div>
+</body>
+</html>
