@@ -23,4 +23,4 @@ A web application designed to generate QR-coded tickets for events like **Enigma
 ## **How to Use**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/enigma-qr-ticket-web-app.git
+   git clone https://github.com/DevZenMaster/enigma-qr-ticket-web-app.git
